@@ -1,0 +1,41 @@
+.main{
+    height: 1968px;
+    margin-left: 98px;
+    margin-right: 98px;
+    margin-top: 45px;
+}
+.menu-featured{
+    text-transform: uppercase;
+}
+.menu-link-featured-active{
+    border-bottom: 3px solid #717171
+}
+.menu-link-featured{
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "HOME     O" */
+    font-style: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+.menu-link-featured2 {
+    border-bottom: 0px solid #717171
+}
+
+.refresh{
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.refresh:hover img{
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+}

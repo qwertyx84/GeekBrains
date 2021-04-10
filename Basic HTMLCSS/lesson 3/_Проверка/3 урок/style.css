@@ -1,0 +1,57 @@
+#index {
+    color: green;
+}
+#catalog {
+    color: red;
+}
+#contacts {
+    color:darkorchid;
+}
+body {
+    background-color:#f8f8f8;
+        
+}
+.menu {
+    list-style-type: none;
+}
+.menu li{
+    height: 30px;
+}
+#htovar {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+#shorttovar {
+    color: #707070;
+    font-style: italic;
+    line-height: 16px;
+    background-color: gainsboro;
+}
+#longtovar {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    background-color: gainsboro;
+}
+#hdetails {
+    color: blue;
+    font-size: 18px;
+    background-color:aquamarine;
+}
+#details li {
+    list-style-type:square;
+}
+#img {
+    border: 3px;
+    border-style: solid;
+    border-color: red;
+}
+input {
+    background-color: black;
+    color: white;
+    
+}

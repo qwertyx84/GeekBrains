@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+}
+
+.header {
+    height: 100px;
+    background-color: orange;
+}
+
+.content {
+    background-color: green;
+}
+
+.clr {
+    height: 100px;
+}
+
+.footer {
+    height: 100px;
+    background-color: red;
+    margin-top: -100px;
+    clear: both;
+}

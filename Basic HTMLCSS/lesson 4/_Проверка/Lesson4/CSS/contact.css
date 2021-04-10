@@ -1,0 +1,11 @@
+.email input:focus {
+        color:brown;
+    background-color:antiquewhite;
+}
+.action li {
+    list-style-type: none;     
+}
+
+input {
+    text-transform: capitalize;
+}

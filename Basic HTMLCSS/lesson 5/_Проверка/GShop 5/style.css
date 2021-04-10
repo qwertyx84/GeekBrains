@@ -1,0 +1,209 @@
+
+/* Фон страницы */
+body{
+    background-color: #f8f8f8;
+}
+
+/* Убираем маркеры меню */
+.menu {
+    list-style-type: none;  
+      
+}
+/* делаем меню горизонтальным */
+.menu  li{
+    display: inline;
+    padding: 4px;
+}
+
+/* Оформление меню */
+.menu li a{
+    font-style: italic;
+    font-size: 20px;  
+         
+}
+
+
+.menu li a:hover{
+    color: salmon;
+}
+
+.menu li a:active{
+    color: seagreen;
+}
+
+/* Рамка для картинки без border */
+img[alt="только что была здесь"]{
+    outline: 2px solid brown;
+}
+
+/* Убираем рамку картинки при наведении на нее курсора мыши */
+img[alt="только что была здесь"]:hover{
+    outline: none;    
+}
+
+/* Заголовки: ​Краткое ​​описание ​т​овара, ​​Характеристики, ​​Подробное ​​описание ​т​овара) */
+.head_text{
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #efefef;
+    clear: both;
+    text-align: center;
+       
+    
+}
+
+/* Краткое описание товара */
+.short_text{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/* Полное описание товара */
+.long_text{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* Характеристики товара */
+.menu_desc li {
+    list-style-type: none;
+    background: url(img/marker.gif) no-repeat left 50%;
+    padding-left: 35px;
+    font-size: 16px;
+    line-height: 30px;
+    color: purple;
+}
+
+/* Задаем размер рамки "Обратная связь" */
+.div_contact {
+    max-width: 200px;
+}
+
+/* Форма обратной связи */
+.table {    
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+    color: rgb(71, 9, 216);
+    height: 20px;
+    width: 290px;
+    text-transform:capitalize
+}
+
+/* поле email */
+input[type="email"]:focus{
+    background-color: rgba(230, 231, 131, 0.534);
+    color: rgb(136, 4, 4);
+}
+
+/* Поле текста письма увеличиваем размер*/
+textarea{
+    height: 60px;
+    width: 290px;
+}
+
+/* Задаем внешние и внутренние границы таблицы */
+table, 
+td{
+    border: 1px solid navy;
+}
+
+/* Задаем размер ячеек и меняем вид границ таблицы */
+table{
+    width: 1000px;
+    height: 200px;
+    border-collapse: collapse;
+}
+
+/* Выравниваем текст в таблице по центру  */
+td{
+    text-align: center;
+}
+
+/* Первая строка таблицы - меняем ее высоту */
+.first_row{
+    height: 40px;
+}
+/* ----------------------------------------------------- */
+/* заголовок на страницы index */
+.header{
+    height: 85px;    
+    background-color: honeydew;
+    position: relative;    
+}
+
+.div_logo{    
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.div_menu{
+    /* border: 2px solid red; */
+    width: 100%;
+    position: absolute;
+    margin-left:  75%;        
+}
+
+/* контейнер в центре страницы index */
+.div_container{  
+    height: 100%;  
+    margin: 0px auto;    
+}
+
+/* Стилизуем footer */
+.footer{
+    background-color: lightslategrey;
+    height: 50px;
+    width: 100%;    
+    clear: both;    
+}
+
+/* текст копирайта */
+.copyrite{    
+    margin-top: 15px;
+    margin-left:  82%;    
+}
+
+.div_product{ 
+    clear: both;
+    position: relative;
+}
+
+.div_product_foto{
+    float: left;
+}
+
+.div_product_link{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 220px;
+}
+
+.div_exempl_foto{
+    float: left;
+}
+
+.div_exempl_foto{
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+.div_btn_buy{
+    clear: both;
+    margin-left: 5%;
+}
+
+.btn_buy:hover{
+    background-color: mediumpurple;
+}
+
+.btn_buy:active{
+    background-color: mediumseagreen;
+}

@@ -1,0 +1,65 @@
+.catalog > h2 {
+	font-weight: 600;
+	margin: 0px 0px 40px 0px;
+}
+
+div.product-list {
+	position: relative;
+}
+
+div.product-list .product-card {
+	float: left;
+	width: 300px;
+	height: 355px;
+	padding: 16px;
+	box-sizing: border-box;
+	margin-left: 27px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	background-color: white;
+}
+
+div.product-list .product-card:first-child {
+	margin-left: 0;
+}
+
+.product-card .card-photo {
+	width: 100%;
+	min-height: 220px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.product-card .card-photo img {
+	width: 100%;
+}
+
+.product-card .card-title {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+	padding-bottom: 20px;
+	height: 72pz;
+}
+
+.product-card .card-button a {
+	display: block;
+	float: right;
+	width: 50%;
+	height: 34px;
+	line-height: 30px;
+	font-size: 14px;
+	box-sizing: border-box;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 600;
+	background-color: #f3f6f9;
+	color: black;
+}
+
+.product-card .card-button a:hover {
+	color: white;
+	background-color: #0099ff;
+}

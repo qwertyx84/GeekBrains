@@ -1,0 +1,125 @@
+/* Краткое описание товара: Фотография */
+.product .teaser-photo {
+	float: left;
+	width: 250px;
+	padding: 10px;
+	margin-right: 30px;
+	background-color: white;
+	outline: 1px solid lightgray;
+	box-shadow: 8px 8px 0px #eaeaea;
+}
+
+.product .teaser-photo:hover {
+	outline: none;
+	box-shadow: 10px 10px 0px #ddd;
+}
+
+.product .teaser-photo img {
+	width: 100%;
+}
+
+/* Краткое описание товара: Правый блок */
+.product .teaser-photo + div {
+	overflow: hidden;
+}
+
+/* Краткое описание товара: Заголовок */
+.product .teaser-title {
+	font-size: 1.5em;
+	font-weight: 600;
+	padding-bottom: 30px;
+}
+
+/* Краткое описание товара: Текст описания */
+.product .teaser-text {
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+	margin-bottom: 20px;
+}
+
+/* Краткое описание товара: Кнопка <Купить> */
+.product .teaser button {
+	display: block;
+	float: right;
+	width: 200px;
+	height: 36px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	box-sizing: border-box;
+	border: 1px solid darkgrey;
+	border-radius: 4px;
+	background-color: teal;
+	color: white;
+	cursor: pointer;
+}
+
+.product .teaser button:hover {
+	background-color: sandybrown;
+	border: 2px solid #444;
+}
+
+.product .teaser button:focus {
+	color: black;
+}
+
+/* Подробное описание товара */
+.product .description {
+	clear: left;
+	padding-top: 30px;
+	margin-bottom: 50px;
+}
+
+.product .description h3 {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #eaeaea;
+	padding: 8px 12px;
+	border-radius: 4px;
+}
+
+/* Таблица свойств товара */
+.product .description table,
+.product .description tr,
+.product .description td {
+	border: none;
+}
+
+.product .description tr {
+	line-height: 2em;
+}
+
+/* Таблица свойств товара:: Маркер строки  */
+.product .description td:first-child:before {
+	content: " ";
+	display: block;
+	float: left;
+	background: url(../img/checkbox-marked-outline.svg) no-repeat center;
+	width: 36px;
+	height: 2em;
+}
+
+/* Таблица свойств товара:: Название параметра  */
+.product .description td:first-child {
+	font-size: 14px;
+	font-weight: 600;
+	padding-right: 20px;
+}
+
+/* Текст подробного описания товара */
+.product .description p {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+.product .description p::first-letter {
+	font-family: serif;
+	font-size: 2.5em;
+	font-weight: 400;
+}

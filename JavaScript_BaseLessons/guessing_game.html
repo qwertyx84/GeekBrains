@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+    var n = 10;
+    var totalCount = 7;
+
+    var answer = parseInt(Math.random() * n);
+    var mess;
+    for (var tryCount = 1; tryCount <= totalCount; tryCount++) {
+        var userAnswer = +prompt("Угадайте число от 0 до " + n);
+        if (isNaN(userAnswer)) {
+            alert("Нужно ввести число!");
+        } else if (answer == userAnswer) {
+            alert("Вы угадали!");
+            break;
+        } else if (userAnswer > answer) {
+            mess = "Упс...Вы ввели слишком большое число!\n";
+        } else {
+            mess = "Упс...Вы ввели слишком маленькое число!\n";
+        }
+        alert(mess + "У вас осталось" + (totalCount - tryCount) + " попыток");
+    }
+    if (tryCount == totalCount)
+        alert("Вы проиграли! Правильный ответ" + answer);
+</script>

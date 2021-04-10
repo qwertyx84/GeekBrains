@@ -1,0 +1,57 @@
+body {
+    background-color: #f8f8f8
+        /*Изменеие цвета фона*/
+}
+
+.menu li {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu li a {
+    color: #8B00FF;
+    text-decoration: none;
+}
+
+input[type="text"] {
+    width: 250px;
+    height: 25x;
+    /*Изменение ширины и высоты полей ввода*/
+    color: darkblue;
+    font-size: 16px;
+
+}
+
+.menu li a:hover {
+    color: red;
+}
+
+.menu li a:active {
+    color: green;
+}
+
+.menu li {
+    width: 200px;
+    height: 30px;
+    list-style-type: none;
+    border: 1px solid #000;
+    text-align: center;
+    display: inline-table
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.menu li:hover:before {
+    content: ">>";
+    color: red;
+}
+
+input {
+    text-transform: capitalize;
+}
