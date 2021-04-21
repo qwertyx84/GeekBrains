@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict"
+        /**
+         * Функция складывает два числа.
+         */
+        function plus(x, y) {
+            return x + y;
+        }
+        /**
+         * Функция вычитает два числа.
+         */
+        function minus(x, y) {
+            return x - y;
+        }
+        /**
+         * Функция вычитает два числа.
+         */
+         let multiply = function (x, y) {
+             return x * y;
+         }
+        /**
+         * Функция делит два числа.
+         */
+        let divide = (x, y) => x / y;
+        
+
+        /**
+         * Функция выполняет с двумя числами заданную арифметическую операцию, в случае неизвестной операции выдает результат undefined.
+         */
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case '+':
+                    return plus(arg1, arg2);
+                case '-':
+                    return minus(arg1, arg2);
+                case '*':
+                    return multiply(arg1, arg2);
+                case '/':
+                    return divide(arg1, arg2);
+
+                default:
+                    return undefined;
+            }
+        }
+        alert(mathOperation(2, 3, "*"));
+    </script>
+</body>
+
+</html>
