@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        class Numer {
+            constructor(units, tens, hundred) {
+                this.units = units;
+                this.tens = tens;
+                this.hundred = hundred
+            }
+        }
+
+        function Number2Class(value) {
+
+            if (isNaN(value) || value.isInterger || value < 0 || value > 999)
+            {
+                console.log('Значение "'+value+'" не является целым числом от 0 до 999');
+                return {};
+            }    
+            let units = value % 10;
+            let tens = ((value - units) / 10) % 10;
+            let hundred = (value - tens * 10 - units) / 100;
+            return new Numer(units, tens, hundred);
+        }
+        let num = prompt("Введите целое число от 0 до 999");
+        console.log(Number2Class(num));
+    </script>
+</body>
+
+</html>
