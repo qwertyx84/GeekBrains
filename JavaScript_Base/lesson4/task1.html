@@ -21,7 +21,7 @@
 
         function Number2Class(value) {
 
-            if (isNaN(value) || value.isInterger || value < 0 || value > 999)
+            if (!Number.isInteger(value) || value < 0 || value > 999)
             {
                 console.log('Значение "'+value+'" не является целым числом от 0 до 999');
                 return {};
